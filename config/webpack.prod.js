@@ -17,14 +17,11 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.(scss|css)$/,
+        test: /\.s[ac]ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          // Creates `style` nodes from JS strings
-          'style-loader',
-          // Translates CSS into CommonJS
           'css-loader',
-          // Compiles Sass to CSS
+          'postcss-loader',
           'sass-loader',
         ],
       },
