@@ -1,0 +1,1 @@
+export {default as imgMan} from './man.jpg'

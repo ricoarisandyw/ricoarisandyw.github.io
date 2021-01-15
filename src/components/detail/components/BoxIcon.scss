@@ -1,0 +1,15 @@
+.BoxIcon {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    position: relative;
+    margin-right: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+
+    .icon {
+        margin: auto;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}

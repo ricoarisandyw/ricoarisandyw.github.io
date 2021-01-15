@@ -1,2 +1,17 @@
 @import "./scss/custom";
 @import '~bootstrap/scss/bootstrap.scss';
+
+@font-face {
+    font-family: Ancient;
+    src: url('./fonts/Ancient-Medium.woff') format('woff');
+}
+
+h1 {
+    font-family: Ancient;
+}
+
+.bg-blur {
+    /* Add the blur effect */
+    filter: blur(5px) !important;
+    -webkit-filter: blur(5px) !important;
+}

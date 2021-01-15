@@ -1,0 +1,55 @@
+.Detail {
+    width: 35%;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    color: white;
+
+    .close {
+        position:absolute;
+        right:0;
+        top:0;
+        color: white;
+        font-size: 2rem;
+        margin-top: .75rem;
+        cursor: pointer;
+        transition: all .1s ease;
+        
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+
+    .description {
+        height: 100px;
+        overflow-y: scroll;
+    }
+
+    .items {
+        display: flex;
+
+        .BoxIcon:nth-child(3n+3){
+            background: steelblue;
+
+            &:hover {
+                background: white;
+            }
+        }
+
+        .BoxIcon:nth-child(3n+2){
+            background: seagreen;
+
+            &:hover {
+                background: white;
+            }
+        }
+
+        .BoxIcon:nth-child(3n+1){
+            background: salmon;
+
+            &:hover {
+                background: white;
+            }
+        }
+    }
+}

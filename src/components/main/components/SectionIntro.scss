@@ -1,0 +1,31 @@
+.SectionIntro {
+    display: flex;
+    position: relative;
+    flex: 1;
+
+    .bg-intro {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('../../../images/man.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        transition: all 1s ease;
+        padding: 0 10%;
+        /* Add the blur effect */
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+
+    .content {
+        background: white;
+    }
+
+    // MOBILE VERSION
+    @media only screen and (max-width: 1000px) {
+        padding: 1%;
+    }
+}
