@@ -2,12 +2,20 @@ import React from 'react'
 import BoxIcon from './BoxIcon'
 import './Detail.scss'
 import {MdClose} from 'react-icons/md'
+import { useDispatch, useSelector } from 'react-redux'
+import { actionShowDetail } from '../action'
+import { RootState } from '../../../rootReducer'
+import { MenuState } from '../../menu/reducer'
 
 const Detail: React.FC = () => {
+    const dispatch = useDispatch()
+
+    const {selectedMenu} = useSelector<RootState, MenuState>((state) => state.menu)
+
     return (
         <div className="Detail">
-            <MdClose className="close" />
-            <h1>Detail Item</h1>
+            <MdClose className="close" onClick={() => dispatch(actionShowDetail(false))} />
+            <h1>{selectedMenu}</h1>
             <b>Sub detail title</b>
             <hr />
             <div className="description">
