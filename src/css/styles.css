@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+hr {
+    margin:0.5rem 0;
+}
+.content {
+    font-size: 10pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#capture {
+    min-width: 530px;width:530px;height:780px;background:#fcf7f6;
+}
+
+#capture2{
+    min-width: 530px;width:530px;height:780px;background:#fcf7f6;
+}
+
+.firstPageContainer {
+    padding-left:30px !important;padding-right:0 !important;border-right:1px solid #b01805;
+}
+
+.projectContainer {
+    padding-left:30px !important;padding-right:0 !important;border-right:1px solid #b01805;position:relative !important;
+}
+
+.projectTitle {
+    background: #b01805;color:white;width:150px;padding:15px !important;padding-bottom: 30px !important;transform: rotate(90deg);position:absolute;left:-22px !important;top:75px;
+}
+
+.skillsContainer {
+    background: #b01805;color:white;padding:15px;padding-bottom: 30px;
+}
