@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://my-gatsby-site/./src/pages/test.tsx"],"names":[],"mappings":"0IAMA,UAJuB,WACrB,OAAO","file":"component---src-pages-test-tsx-3e40aa73590329a50f32.js","sourcesContent":["import React from \"react\"\n\nconst Test: React.FC = () => {\n  return <div>Test</div>\n}\n\nexport default Test\n"],"sourceRoot":""}

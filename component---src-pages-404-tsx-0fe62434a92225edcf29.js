@@ -1,0 +1,2 @@
+(self.webpackChunkmy_gatsby_site=self.webpackChunkmy_gatsby_site||[]).push([[218],{9786:function(e,s,t){"use strict";t.r(s);var a=t(7294),n={color:"#232129",padding:"96px",fontFamily:"-apple-system, Roboto, sans-serif, serif"};s.default=function(){return a.createElement("main",{style:n},"Hello World")}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-0fe62434a92225edcf29.js.map
