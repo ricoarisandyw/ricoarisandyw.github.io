@@ -1,0 +1,117 @@
+.parallax {
+  margin-left: -15px;
+  margin-right: -15px;
+  height: 300px;
+  position: relative;
+}
+
+.forest {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.mountain {
+  &-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    perspective: 5px;
+    transform: translateZ(-10px);
+  }
+
+  &-2 {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    z-index: 3;
+    perspective: 10px;
+  }
+
+  &-3 {
+    position: absolute;
+    bottom: 0;
+    right: 10;
+    z-index: 2;
+    perspective: 15px;
+  }
+}
+
+.Project {
+  background: #366750;
+  margin-left: -15px;
+  margin-right: -15px;
+  z-index: 10;
+  color: white;
+}
+
+.mask-gradient {
+  background-attachment: fixed;
+  // background-image: url("https://cdn.pixabay.com/photo/2021/07/17/16/52/poppy-6473530_960_720.jpg");
+  background: linear-gradient(175deg, rgba(19, 19, 3, 0.2) 4%, rgba(248, 253, 5, 0) 96%),
+    linear-gradient(3deg, #d9dc5a 6.31%, #5adc9e 32.55%, #4aa5da 96.46%);
+  height: 200px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+
+  li {
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 2px 16px 2px 8px;
+    border-color: #366750;
+    flex: 0 0 auto;
+
+    &::after {
+      content: "";
+      background: #366750;
+      width: 100%;
+      flex: 1;
+    }
+
+    &::before {
+      content: "";
+      background: #366750;
+      flex: 0;
+    }
+  }
+
+  .bubble {
+    position: relative;
+    padding: 8px 2rem;
+    padding-right: 1rem;
+    background: none;
+    color: white;
+    text-align: left;
+    display: flex;
+    cursor: pointer;
+
+    i {
+      margin-left: 1rem;
+      transition: 0.3s transform ease;
+    }
+
+    &:hover {
+      i {
+        transform: scale(1.5);
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      top: -8px;
+      bottom: -8px;
+      right: -8px;
+      border: 8px solid #366750;
+      border-radius: 16px;
+      pointer-events: none;
+    }
+  }
+}

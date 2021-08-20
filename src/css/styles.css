@@ -1,36 +1,146 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap");
 
 body {
-    font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 hr {
-    margin:0.5rem 0;
+  margin: 0.5rem 0;
 }
 .content {
-    font-size: 10pt;
-    font-family: 'Montserrat', sans-serif;
+  font-size: 10pt;
+  font-family: "Montserrat", sans-serif;
 }
 
 #capture {
-    min-width: 530px;width:530px;height:780px;background:#fcf7f6;
+  min-width: 530px;
+  width: 530px;
+  height: 780px;
+  background: #fcf7f6;
 }
 
-#capture2{
-    min-width: 530px;width:530px;height:780px;background:#fcf7f6;
+#capture2 {
+  min-width: 530px;
+  width: 530px;
+  height: 780px;
+  background: #fcf7f6;
 }
 
 .firstPageContainer {
-    padding-left:30px !important;padding-right:0 !important;border-right:1px solid #b01805;
+  padding-left: 30px !important;
+  padding-right: 0 !important;
+  border-right: 1px solid #b01805;
 }
 
 .projectContainer {
-    padding-left:30px !important;padding-right:0 !important;border-right:1px solid #b01805;position:relative !important;
+  padding-left: 30px !important;
+  padding-right: 0 !important;
+  border-right: 1px solid #b01805;
+  position: relative !important;
 }
 
 .projectTitle {
-    background: #b01805;color:white;width:150px;padding:15px !important;padding-bottom: 30px !important;transform: rotate(90deg);position:absolute;left:-22px !important;top:75px;
+  background: #b01805;
+  color: white;
+  width: 150px;
+  padding: 15px !important;
+  padding-bottom: 30px !important;
+  transform: rotate(90deg);
+  position: absolute;
+  left: -22px !important;
+  top: 75px;
 }
 
 .skillsContainer {
-    background: #b01805;color:white;padding:15px;padding-bottom: 30px;
+  background: #b01805;
+  color: white;
+  padding: 15px;
+  padding-bottom: 30px;
+}
+
+.home {
+  background-image: url("../images/background.jpeg");
+  min-height: 500px;
+  position: relative;
+}
+
+/* === TYPOGRAPHY === */
+.super-bold {
+  font-weight: 800;
+}
+
+body {
+  color: rgb(90, 90, 90);
+}
+
+.color-green {
+  background: -webkit-linear-gradient(90deg, #205072, #56c596);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass {
+  padding: 0.5rem;
+  text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+}
+
+.btn-neuro {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #53c6c3, #46a7a4);
+  box-shadow: 10px 10px 19px #429d9b, -10px -10px 19px #5ad5d1;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.btn-neuro:hover {
+  background: #4eb9b6;
+}
+
+.btn-beauty {
+  background: linear-gradient(180deg, rgba(19, 19, 3, 0.2) 4%, rgba(248, 253, 5, 0) 96%), linear-gradient(269.42deg, #D9DC5A 6.31%, #5ADC9E 32.55%, #4AA5DA 96.46%);
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  padding: .5rem 2rem;
+  cursor: pointer;
+  transition: .2s border ease;
+}
+
+.btn-cyber {
+  background: yellow;
+  padding: .5rem 2rem;
+  
+}
+
+.neon {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+.btn-neon {
+  padding: .5rem 2rem;
+  border: #fff solid 2px;
+  box-shadow: #0fa 0px 0px 5px 1px, #0fa 0px 0px 5px 1px inset;
+  transition: .3s all ease;
+  cursor: pointer;
+}
+
+.btn-neon:hover {
+  color: #0fa;
+  border: #0fa solid 2px;
 }

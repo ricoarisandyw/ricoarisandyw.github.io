@@ -1,0 +1,84 @@
+// Web Mode
+@media only screen and (min-width: 769px) {
+    .navbar {
+        position: fixed;
+        top:0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .navbar-scroll {
+        background-color: aqua;
+    }
+
+    .navbar-menu {
+        background: red;
+    }
+}
+
+// Mobile Mode
+@media only screen and (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        bottom:0;
+        width:100%;
+        z-index: 100;
+        padding: 10px 0px;
+        background: white;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+
+        // Hide logo on top
+        .logo {
+            opacity: 0;
+            transition: .3s all ease;
+        }
+    }
+
+    .navbar-scroll {
+        .logo {
+            opacity: 1;
+        }
+    }
+
+    .logo {
+        position: fixed;
+        top:0;
+        width: 100%;
+        z-index: 100;
+        height: 70px;
+        background: white;
+        display: flex;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 16px 48px;
+        padding: 10px 0px;
+
+        &-item {
+            font-size: xx-large;
+            margin:auto;
+        }
+    }
+    
+    .navbar-menu {
+        width: 100%;
+        display: flex;
+        min-height: 44px;
+        z-index: 100;
+
+        .menu-item {
+            flex: 1;
+            margin: auto;
+            text-align: center;
+            padding: 5px 10px;
+            cursor: pointer;
+
+            &.active {
+                background: -webkit-linear-gradient(90deg, #205072, #56C596);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .menu-icon {
+            height: 30px;
+        }
+    }
+}

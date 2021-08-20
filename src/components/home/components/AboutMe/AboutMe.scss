@@ -1,0 +1,71 @@
+.about-me {
+    padding: 30px;
+}
+
+.about-me-description {
+    padding: 30px;
+    z-index: 50;
+}
+
+.bg {
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+.blob-1 {
+    background: linear-gradient(
+        175deg
+        , rgba(19, 19, 3, 0.2) 4%, rgba(248, 253, 5, 0) 96%), linear-gradient(
+        3deg
+        , #d9dc5a 6.31%, #5adc9e 32.55%, #4aa5da 96.46%);
+    height: 50%;
+    width: 70%;
+    left: 15%;
+    top: 10%;
+    border-radius: 30% 70% 62% 38% / 30% 40% 60% 70% ;
+    animation: 7s blob-1-animation infinite;
+    opacity: 0.9;
+}
+
+.blob-2 {
+    background: linear-gradient(
+        45deg
+        , #3023AE 0%, #f09 100%);
+    height: 60%;
+    width: 70%;
+    left: 15%;
+    top: 10%;
+    border-radius: 30% 70% 62% 38% / 30% 40% 60% 70% ;
+    animation: 7s blob-1-animation infinite;
+    opacity: 0.9;
+}
+
+@keyframes blob-1-animation {
+    0% {
+        border-radius: 30% 70% 62% 38% / 30% 40% 60% 70%;
+    }
+    33% {
+        border-radius: 30% 70% 24% 76% / 58% 9% 91% 42%;
+    }
+    66% {
+        border-radius: 54% 46% 50% 50% / 48% 48% 52% 52%;
+    }
+    100% {
+        border-radius: 30% 70% 62% 38% / 30% 40% 60% 70%;
+    }
+}
+
+// Mobile Mode
+@media only screen and (max-width: 768px) {
+    .about-me-image {
+        background:rgba(255, 255, 255, 0.63);
+        position:relative;
+        width: 100%;
+        bottom: 0;
+        bottom: 0;
+        margin: 0 auto;
+        margin-top: 1rem;
+        z-index: 10;
+    }
+}

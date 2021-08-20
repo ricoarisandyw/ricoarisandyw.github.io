@@ -1,0 +1,28 @@
+.Certificate {
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+  }
+  .marquee {
+    width: 600%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+    .item {
+      flex: 1;
+      padding: .5rem;
+      animation: marquee 10s linear infinite;
+    }
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% * 3));
+  }
+}
